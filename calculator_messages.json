@@ -1,0 +1,68 @@
+{
+	"English":{
+  "welcome": "Welcome to Calculator!",
+	"firstNumber": "Enter the first number:",
+	"secondNumber": "Enter the second number:",
+  "invalidNumber": "Hmm... that doesn't look like a valid number.",
+	"operation": "Choose an operation:\n1) Add 2) Subtract 3) Multiply 4) Divide",
+	"invalidOperation": "Hmm... that doesn't look like a valid operation.",
+	"result": "The result is: ",
+	"again": "Would you like to perform another calculation?",
+	"thanks": "Thanks for using Calculator!"
+},
+"Espanol":{
+	"welcome": "¡Bienvenido a la Calculadora!",
+	"firstNumber": "Introduce el primer número:",
+	"secondNumber": "Introduce el segundo número:",
+	"invalidNumber": "Hmm... eso no parece un número válido.",
+	"operation": "Elige una operación:\n1) Sumar 2) Restar 3) Multiplicar 4) Dividir",
+	"invalidOperation": "Hmm... eso no parece una operación válida.",
+	"result": "El resultado es: ",
+	"again": "¿Te gustaría realizar otro cálculo?",
+	"thanks": "¡Gracias por usar la Calculadora!"
+},
+"German":{
+	"welcome": "Willkommen bei Calculator!",
+	"firstNumber": "Geben Sie die erste Zahl ein:",
+	"secondNumber": "Geben Sie die zweite Zahl ein:",
+	"invalidNumber": "Hmm... das sieht nicht wie eine gültige Zahl aus.",
+	"operation": "Wählen Sie eine Operation aus:\n1) Addieren 2) Subtrahieren 3) Multiplizieren 4) Teilen",
+	"invalidOperation": "Hmm... das sieht nicht wie eine gültige Operation aus.",
+	"result": "Das Ergebnis ist: ",
+	"again": "Möchten Sie eine weitere Berechnung durchführen?",
+	"thanks": "Danke, dass Sie Calculator verwendet haben!"
+},
+"Leet":{
+	"welcome": "W3lc0m3 70 C4lcu1470r!",
+	"firstNumber": "3n73r 7h3 f1r57 numb3r:",
+	"secondNumber": "3n73r 7h3 53c0nd numb3r:",
+	"invalidNumber": "Hmm... 7h47 d035n'7 l00k l1k3 4 v4l1d numb3r.",
+	"operation": "Ch0053 4n 0p3r4710n:\n1) 4dd 2) 5ub7r4c7 3) Mul71pl1 4) D1v1d3",
+	"invalidOperation": "Hmm... 7h47 d035n'7 l00k l1k3 4 v4l1d 0p3r4710n.",
+	"result": "7h3 r35ul7 15: ",
+	"again": "W0uld y0u l1k3 70 p3rf0rm 4n07h3r c4lcu14710n?",
+	"thanks": "7h4nk5 f0r u51ng C4lcu1470r!"
+},
+"Klingon":{
+	"welcome": "Calculator Daqawlu'!",
+	"firstNumber": "ghu'vam number vatlhvI'laH:",
+	"secondNumber": "cha' number vatlhvI'laH:",
+	"invalidNumber": "Hmm... 'oH vatlhvI'laH number vIghro' 'e' vIghro'.",
+	"operation": "ghu'vam Daqawlu' vIghro' 1) 'oH 2) subtract 3) multiply 4) divide",
+	"invalidOperation": "Hmm... 'oH vatlhvI'laH Daqawlu' vIghro'.",
+	"result": "Daqawlu' vIghro' je: ",
+	"again": "Daqawlu' vIghro'?",
+	"thanks": "Calculator vIghro'!"
+},
+"Pirate":{
+	"welcome": "Ahoy, ye scurvy dog! Welcome to Calculator!",
+	"firstNumber": "Enter the first number, ye scallywag:",
+	"secondNumber": "Enter the second number, ye bilge rat:",
+	"invalidNumber": "Arrr... that be no number, yer testin' me patience!",
+	"operation": "Choose an operation, ye swashbuckler:\n1) Add 2) Subtract 3) Multiply 4) Divide",
+	"invalidOperation": "Arrr... you'll walk the plank if ye keep this up!",
+	"result": "I be no mathematician, but I believe\nthe result be: ",
+	"again": "Would ye like to perform another calculation, ye scurvy dog?",
+	"thanks": "I be mighty grateful for ye using Calculator!\nSee ye on the the open seas!"
+}
+}

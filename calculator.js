@@ -1,41 +1,64 @@
-/* eslint-disable no-console */
-/* eslint-disable default-case */
-// Ask the user for the first number.
-// Ask the user for the second number.
-// Ask the user for an operation to perform.
-// Perform the operation on the two numbers.
-// Print the result to the terminal.
+const MESSAGES = require("./calculator_messages.json");
 const readline = require("readline-sync");
 
 function prompt(message) {
   console.log(`=> ${message}`);
 }
+
 function invalidNumber(number) {
   return Number.isNaN(Number(number));
 }
 
-prompt("Welcome to Calculator!");
+// Mapping user input to language codes
+const languageMap = {
+  1: "English",
+  2: "Espanol",
+  3: "German",
+  4: "Leet",
+  5: "Klingon",
+  6: "Pirate",
+};
+
+prompt(
+  "Enter your language:\n 1) English 2) Spanish 3) German\n Do NOT enter 4, 5, or 6\n"
+);
+let langChoice = readline.question();
+
+// Validate language choice and ask again if necessary
+while (!languageMap[langChoice]) {
+  prompt("Please enter a valid language choice");
+  langChoice = readline.question();
+}
+
+// Fetch the selected language's messages
+let currentLanguage = languageMap[langChoice];
+let langMessages = MESSAGES[currentLanguage];
+
+// Use langMessages for prompts
+prompt(langMessages["welcome"]);
+
 while (true) {
-  prompt("What's the first number?");
+  prompt(langMessages["firstNumber"]);
   let number1 = readline.question();
+
   while (invalidNumber(number1)) {
-    prompt("Hmm... that doesn't look like a valid number.");
+    prompt(langMessages["invalidNumber"]);
     number1 = readline.question();
   }
 
-  prompt("What's the second number?");
+  prompt(langMessages["secondNumber"]);
   let number2 = readline.question();
+
   while (invalidNumber(number2)) {
-    prompt("Hmm... that doesn't look like a valid number.");
+    prompt(langMessages["invalidNumber"]);
     number2 = readline.question();
   }
 
-  prompt(
-    "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide"
-  );
+  prompt(langMessages["operation"]);
   let operation = readline.question();
+
   while (!["1", "2", "3", "4"].includes(operation)) {
-    prompt("Must choose 1, 2, 3, or 4");
+    prompt(langMessages["invalidOperation"]);
     operation = readline.question();
   }
 
@@ -54,13 +77,13 @@ while (true) {
       output = Number(number1) / Number(number2);
       break;
   }
+  prompt(langMessages["result"] + output);
 
-  prompt(`The result is: ${output}`);
-
-  prompt("Would you like to perform another calculation? (y/n)");
+  prompt(langMessages["again"]);
   let answer = readline.question();
-  if (answer !== "y") {
-    prompt("Thank you for using the calculator. Goodbye!");
+
+  if (answer.toLowerCase() !== "y") {
+    prompt(langMessages["thanks"]);
     break;
   }
 }
